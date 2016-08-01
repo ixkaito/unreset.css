@@ -8,7 +8,7 @@
 /* bidi */
 
 [dir] {
-  unicode-bidi: isolate;
+  unicode-bidi: -moz-isolate;
 }
 [dir="rtl"] {
   direction: rtl;
@@ -17,8 +17,8 @@
   direction: ltr;
 }
 
-bdi:dir(ltr), [dir="auto"]:dir(ltr) { direction: ltr; }
-bdi:dir(rtl), [dir="auto"]:dir(rtl) { direction: rtl; }
+bdi:-moz-dir(ltr), [dir="auto"]:-moz-dir(ltr) { direction: ltr; }
+bdi:-moz-dir(rtl), [dir="auto"]:-moz-dir(rtl) { direction: rtl; }
 
 /* To ensure http://www.w3.org/TR/REC-html40/struct/dirlang.html#style-bidi:
  *
@@ -83,16 +83,19 @@ thead,
 tr,
 ul,
 xmp {
-  unicode-bidi: isolate;
+  unicode-bidi: -moz-isolate;
 }
 
 bdi, output {
-  unicode-bidi: isolate;
+  unicode-bidi: -moz-isolate;
 }
 bdo, bdo[dir] {
-  unicode-bidi: isolate-override;
+  unicode-bidi: bidi-override;
 }
-textarea[dir="auto"], pre[dir="auto"] { unicode-bidi: plaintext; }
+bdo[dir="auto"] {
+  unicode-bidi: -moz-isolate-override;
+}
+textarea[dir="auto"], pre[dir="auto"] { unicode-bidi: -moz-plaintext; }
 
 /* blocks */
 
@@ -127,15 +130,15 @@ p, dl, multicol {
 
 dd {
   display: block;
-  margin-inline-start: 40px;
+  -moz-margin-start: 40px;
 }
 
 blockquote, figure {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
+  -moz-margin-start: 40px;
+  -moz-margin-end: 40px;
 }
 
 address {
@@ -152,10 +155,10 @@ blockquote[type=cite] {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  padding-inline-start: 1em;
-  border-inline-start: solid;
+  -moz-margin-start: 0;
+  -moz-margin-end: 0;
+  -moz-padding-start: 1em;
+  -moz-border-start: solid;
   border-color: blue;
   border-width: thin;
 }
@@ -383,17 +386,17 @@ table[rules][rules="cols"] > tr > td,
 table[rules][rules="cols"] > * > tr > td,
 table[rules][rules="cols"] > tr > th,
 table[rules][rules="cols"] > * > tr > th {
-  border-inline-start-width: thin;
-  border-inline-end-width: thin;
-  border-inline-start-style: solid;
-  border-inline-end-style: solid;
+  -moz-border-start-width: thin;
+  -moz-border-end-width: thin;
+  -moz-border-start-style: solid;
+  -moz-border-end-style: solid;
 }
 
 table[rules][rules="groups"] > colgroup {
-  border-inline-start-width: thin;
-  border-inline-end-width: thin;
-  border-inline-start-style: solid;
-  border-inline-end-style: solid;
+  -moz-border-start-width: thin;
+  -moz-border-end-width: thin;
+  -moz-border-start-style: solid;
+  -moz-border-end-style: solid;
 }
 table[rules][rules="groups"] > tfoot,
 table[rules][rules="groups"] > thead,
@@ -412,22 +415,22 @@ caption {
 }
 
 table[align="center"] > caption {
-  margin-inline-start: auto;
-  margin-inline-end: auto;
+  -moz-margin-start: auto;
+  -moz-margin-end: auto;
 }
 
-table[align="center"] > caption[align="left"]:dir(ltr) {
-  margin-inline-end: 0;
+table[align="center"] > caption[align="left"]:-moz-dir(ltr) {
+  -moz-margin-end: 0;
 }
-table[align="center"] > caption[align="left"]:dir(rtl) {
-  margin-inline-start: 0;
+table[align="center"] > caption[align="left"]:-moz-dir(rtl) {
+  -moz-margin-start: 0;
 }
 
-table[align="center"] > caption[align="right"]:dir(ltr) {
-  margin-inline-start: 0;
+table[align="center"] > caption[align="right"]:-moz-dir(ltr) {
+  -moz-margin-start: 0;
 }
-table[align="center"] > caption[align="right"]:dir(rtl) {
-  margin-inline-end: 0;
+table[align="center"] > caption[align="right"]:-moz-dir(rtl) {
+  -moz-margin-end: 0;
 }
 
 tr {
@@ -569,7 +572,7 @@ ul, menu, dir {
   list-style-type: disc;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  padding-inline-start: 40px;
+  -moz-padding-start: 40px;
 }
 
 menu[type="context"] {
@@ -581,7 +584,7 @@ ol {
   list-style-type: decimal;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  padding-inline-start: 40px;
+  -moz-padding-start: 40px;
 }
 
 li {
@@ -624,8 +627,8 @@ hr {
   border: 1px inset;
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
-  margin-inline-start: auto;
-  margin-inline-end: auto;
+  -moz-margin-start: auto;
+  -moz-margin-end: auto;
   color: gray;
   -moz-float-edge: margin-box;
   box-sizing: border-box;
@@ -641,7 +644,7 @@ img:-moz-loading::before, input:-moz-loading::before,
 applet:-moz-empty-except-children-with-localname(param):-moz-broken::before,
 applet:-moz-empty-except-children-with-localname(param):-moz-user-disabled::before {
   content: -moz-alt-content !important;
-  unicode-bidi: isolate;
+  unicode-bidi: -moz-isolate;
 }
 
 :-moz-any(object,applet):-moz-any(:-moz-broken,:-moz-user-disabled) > *|* {
@@ -768,23 +771,15 @@ video > .caption-box {
 }
 
 /* details & summary */
-/* Need to revert Bug 1259889 Part 2 when removing details preference. */
-@supports -moz-bool-pref("dom.details_element.enabled") {
-  details > summary:first-of-type,
-  details > summary:-moz-native-anonymous {
-    display: list-item;
-    list-style: disclosure-closed inside;
-  }
 
-  details[open] > summary:first-of-type,
-  details[open] > summary:-moz-native-anonymous {
-    list-style-type: disclosure-open;
-  }
+details > summary::-moz-list-bullet {
+  list-style-type: disclosure-closed;
+  /* Prevent elements in summary being selected when clicking on the triangle. */
+  -moz-user-select: none;
+}
 
-  details > summary:first-of-type > *|* {
-    /* Cancel "list-style-position: inside" inherited from summary. */
-    list-style-position: initial;
-  }
+details[open] > summary::-moz-list-bullet {
+  list-style-type: disclosure-open;
 }
 
 /* emulation of non-standard HTML <marquee> tag */
@@ -831,12 +826,10 @@ rtc, rt {
   font-size: 50%;
   -moz-min-font-size-ratio: 50%;
   line-height: 1;
-%ifndef XP_WIN
   /* The widely-used Windows font Meiryo doesn't work fine with this
    * setting, so disable this on Windows. We should re-enable it once
    * Microsoft fixes this issue. See bug 1164279. */
   font-variant-east-asian: ruby;
-%endif
 }
 rtc, rt {
   text-emphasis: none;
@@ -852,5 +845,5 @@ rtc > rt {
   font-size: inherit;
 }
 ruby, rb, rt, rtc {
-  unicode-bidi: isolate;
+  unicode-bidi: -moz-isolate;
 }
