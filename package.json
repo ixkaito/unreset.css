@@ -1,0 +1,26 @@
+{
+  "name": "unreset-css",
+  "version": "0.0.1",
+  "description": "Unreset.css restores browsers' default element styles which are reset by Eric Meyer's Reset CSS, YUI 3 Reset CSS, HTML5 Reset Stylesheet of HTML5 Doctor, or Tim Murtaugh's HTML5 Reset.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ixkaito/unreset-css.git"
+  },
+  "keywords": [
+    "css",
+    "unreset",
+    "reset",
+    "stylesheet",
+    "html5"
+  ],
+  "author": "Kite <ixkaito@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ixkaito/unreset-css/issues"
+  },
+  "homepage": "https://github.com/ixkaito/unreset-css#readme"
+}
