@@ -1,6 +1,6 @@
 {
   "name": "unreset-css",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Unreset CSS restores browsers' default element styles which are reset by Eric Meyer's Reset CSS, YUI 3 Reset CSS, HTML5 Reset Stylesheet of HTML5 Doctor, or Tim Murtaugh's HTML5 Reset.",
   "main": "index.js",
   "scripts": {
