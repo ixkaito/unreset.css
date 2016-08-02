@@ -23,7 +23,7 @@ $ npm install --save unreset-css
 
 **Or, download manually:**
 
-[![unreset.css](https://img.shields.io/badge/Download-unreset.css-brightgreen.svg)](https://raw.githubusercontent.com/ixkaito/unreset-css/master/unreset.css) [![unreset.min.css](https://img.shields.io/badge/Download-unreset.min.css-brightgreen.svg)](https://raw.githubusercontent.com/ixkaito/unreset-css/master/unreset.min.css)
+[![unreset.css](https://img.shields.io/badge/Download-unreset.css-brightgreen.svg)](https://raw.githubusercontent.com/ixkaito/unreset-css/master/dist/unreset.css) [![unreset.min.css](https://img.shields.io/badge/Download-unreset.min.css-brightgreen.svg)](https://raw.githubusercontent.com/ixkaito/unreset-css/master/dist/unreset.min.css)
 
 ## Import
 
