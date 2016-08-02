@@ -35,6 +35,16 @@ $ npm install --save unreset-css
 }
 ```
 
+**Node-sass:**
+
+1.  If you’re using [Eyeglass](http://eyeglass.rocks), skip to Step 2. Otherwise, you’ll need to add Unreset CSS to your node-sass `includePaths` option. `require("unreset-css").includePaths` is an array of directories that you should pass to node-sass. How you do this depends on how node-sass is integrated into your project.
+
+2.  Import Unreset CSS into your Sass files:
+
+    ```scss
+    @import "unreset";
+    ```
+
 **CSS:**
 
 ```html
