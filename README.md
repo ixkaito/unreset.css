@@ -42,7 +42,9 @@ $ npm install --save unreset-css
 2.  Import Unreset CSS into your Sass files:
 
     ```scss
-    @import "unreset";
+    .unreset {
+        @import "unreset";
+    }
     ```
 
 **CSS:**
