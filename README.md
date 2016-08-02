@@ -11,7 +11,7 @@ Unreset CSS is based on browsers' default styles:
 - [Edge](http://www.iecss.com/edgehtml-13.10586.css)
 - [Opera](http://www.iecss.com/opera-10.51.css)
 
-The sources are in the `[defaults](https://github.com/ixkaito/unreset-css/tree/master/defaults)` directory.
+The sources are in the [`defaults`](https://github.com/ixkaito/unreset-css/tree/master/defaults) directory.
 
 ## Install
 
