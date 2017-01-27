@@ -6,10 +6,10 @@ Unreset CSS is based on these layout engines' default styles:
 
 - [Gecko (Firefox)](https://dxr.mozilla.org/mozilla-central/source/layout/style/res/html.css) or browse to `resource://gre-resources/html.css` on your Firefox.
 - [Blink (Chromium/Chrome 28+, Opera 15+)](https://chromium.googlesource.com/chromium/blink/+/master/Source/core/css/html.css)
-- [Webkit (Safari, Chrome before 28, Opera 14](http://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css)
-- [Opera 7 to 12 (Presto)](http://www.iecss.com/opera-10.51.css)
-- [Internet Explorer 9 (Trident)](http://www.iecss.com/ie-9.css)
-- [Edge (EdgeHTML)](http://www.iecss.com/edgehtml-13.10586.css)
+- [Webkit (Safari, Chrome before 28, Opera 14)](http://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css)
+- [Presto (Opera 7 to 12)](http://www.iecss.com/opera-10.51.css)
+- [Trident (Internet Explorer)](http://www.iecss.com/ie-9.css)
+- [EdgeHTML (Edge)](http://www.iecss.com/edgehtml-13.10586.css)
 
 The sources are in the [`defaults`](https://github.com/ixkaito/unreset-css/tree/master/defaults) directory.
 
