@@ -2,12 +2,12 @@
 
 Unreset CSS restores browsers' default element styles which are reset by [Eric Meyer's Reset CSS](http://meyerweb.com/eric/tools/css/reset/), [YUI 3 Reset CSS](http://yuilibrary.com/yui/docs/cssreset/), [HTML5 Reset Stylesheet of HTML5 Doctor](http://html5doctor.com/html-5-reset-stylesheet/), or [Tim Murtaugh's HTML5 Reset](http://html5reset.org/).
 
-Unreset CSS is based on browsers' default styles:
+Unreset CSS is based on these layout engines' default styles:
 
-- [Firefox (Gecko)](https://dxr.mozilla.org/mozilla-central/source/layout/style/res/html.css) or browse to `resource://gre-resources/html.css` on your Firefox.
-- [Chrome / Opera 15 (Blink)](https://chromium.googlesource.com/chromium/blink/+/master/Source/core/css/html.css)
-- [Safari (WebKit)](http://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css)
-- [Opera (Presto)](http://www.iecss.com/opera-10.51.css)
+- [Gecko (Firefox)](https://dxr.mozilla.org/mozilla-central/source/layout/style/res/html.css) or browse to `resource://gre-resources/html.css` on your Firefox.
+- [Blink (Chromium/Chrome 28+, Opera 15+)](https://chromium.googlesource.com/chromium/blink/+/master/Source/core/css/html.css)
+- [Webkit (Safari, Chrome before 28, Opera 14](http://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css)
+- [Opera 7 to 12 (Presto)](http://www.iecss.com/opera-10.51.css)
 - [Internet Explorer 9 (Trident)](http://www.iecss.com/ie-9.css)
 - [Edge (EdgeHTML)](http://www.iecss.com/edgehtml-13.10586.css)
 
