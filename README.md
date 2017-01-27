@@ -7,9 +7,9 @@ Unreset CSS is based on browsers' default styles:
 - [Firefox (Gecko)](https://dxr.mozilla.org/mozilla-central/source/layout/style/res/html.css) or browse to `resource://gre-resources/html.css` on your Firefox.
 - [Chrome (Blink)](https://chromium.googlesource.com/chromium/blink/+/master/Source/core/css/html.css)
 - [Safari (WebKit)](http://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css)
+- [Opera (Presto)](http://www.iecss.com/opera-10.51.css)
 - [Internet Explorer 9 (Trident)](http://www.iecss.com/ie-9.css)
 - [Edge (EdgeHTML)](http://www.iecss.com/edgehtml-13.10586.css)
-- [Opera (Presto)](http://www.iecss.com/opera-10.51.css)
 
 The sources are in the [`defaults`](https://github.com/ixkaito/unreset-css/tree/master/defaults) directory.
 
