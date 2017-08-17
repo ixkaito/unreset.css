@@ -1,8 +1,8 @@
-# Unreset CSS [![npm](https://img.shields.io/npm/v/unreset-css.svg)](https://www.npmjs.com/package/unreset-css)
+# unreset.css [![npm](https://img.shields.io/npm/v/unreset-css.svg)](https://www.npmjs.com/package/unreset-css)
 
-Unreset CSS restores browsers' default element styles which are reset by [Eric Meyer's Reset CSS](http://meyerweb.com/eric/tools/css/reset/), [YUI 3 Reset CSS](http://yuilibrary.com/yui/docs/cssreset/), [HTML5 Reset Stylesheet of HTML5 Doctor](http://html5doctor.com/html-5-reset-stylesheet/), or [Tim Murtaugh's HTML5 Reset](http://html5reset.org/).
+Unreset.css restores browsers' default element styles which are reset by [Eric Meyer's Reset CSS](http://meyerweb.com/eric/tools/css/reset/), [YUI 3 Reset CSS](http://yuilibrary.com/yui/docs/cssreset/), [HTML5 Reset Stylesheet of HTML5 Doctor](http://html5doctor.com/html-5-reset-stylesheet/), or [Tim Murtaugh's HTML5 Reset](http://html5reset.org/).
 
-Unreset CSS is based on these layout engines' default styles:
+Unreset.css is based on these layout engines' default styles:
 
 - [Gecko (Firefox)](https://dxr.mozilla.org/mozilla-central/source/layout/style/res/html.css) or browse to `resource://gre-resources/html.css` on your Firefox.
 - [Blink (Chromium/Chrome 28+, Opera 15+)](https://chromium.googlesource.com/chromium/blink/+/master/Source/core/css/html.css)
@@ -37,9 +37,9 @@ $ npm install --save unreset-css
 
 **Node-sass:**
 
-1.  If you’re using [Eyeglass](http://eyeglass.rocks), skip to Step 2. Otherwise, you’ll need to add Unreset CSS to your node-sass `includePaths` option. `require("unreset-css").includePaths` is an array of directories that you should pass to node-sass. How you do this depends on how node-sass is integrated into your project.
+1.  If you’re using [Eyeglass](http://eyeglass.rocks), skip to Step 2. Otherwise, you’ll need to add unreset.css to your node-sass `includePaths` option. `require("unreset-css").includePaths` is an array of directories that you should pass to node-sass. How you do this depends on how node-sass is integrated into your project.
 
-2.  Import Unreset CSS into your Sass files:
+2.  Import unreset.css into your Sass files:
 
     ```scss
     .unreset {
