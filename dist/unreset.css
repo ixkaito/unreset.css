@@ -36,7 +36,7 @@ html.unreset {
 .unreset hr {
   border: 1px inset;
   box-sizing: border-box;
-  margin: 0.5em autl;
+  margin: 0.5em auto;
 }
 .unreset h1 {
   font-size: 2em;
